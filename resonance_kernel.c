@@ -18,7 +18,7 @@ typedef struct {
 
 // Adaptive Resonance Function
 // For Erdős: Resonance at distance 1.
-// For S-combinator: Resonance at logical consistency/target.
+
 double resonance_function(double d, double sigma) {
     double diff = d - 1.0;
     return exp(-(diff * diff) / (2.0 * sigma * sigma));
